@@ -32,8 +32,8 @@ model Products {
   name       String
   price      Float
   modelCode  String     @map("model_code")
-  category   Categories @relation(fields: [categroyId], references: [id])
-  categroyId Int        @map("categroy_id")
+  category   Categories @relation(fields: [categoryId], references: [id])
+  categoryId Int        @map("category_id")
   brandId    String     @map("brand_id")
   createdAt  DateTime   @default(now()) @map("created_at")
   updatedAt  DateTime   @updatedAt @map("updated_at")
