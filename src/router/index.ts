@@ -1,7 +1,10 @@
 import { Router } from "express";
-import { homeRouter } from "../components";
+import { CategoriesRouter, ProductsRouter } from "../components";
 
-const routes = [["/", homeRouter]];
+const routes = [
+  ["/categories", CategoriesRouter],
+  ["/products", ProductsRouter],
+];
 
 const router = Router();
 

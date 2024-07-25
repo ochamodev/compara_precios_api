@@ -1,1 +1,2 @@
-export { homeRouter } from "./home";
+export { ProductsRouter } from "./products";
+export { CategoriesRouter } from "./categories";
